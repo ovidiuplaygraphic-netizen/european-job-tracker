@@ -1,0 +1,10 @@
+{
+  "name": "European Opportunity Radar",
+  "short_name": "Job Radar",
+  "description": "Profile-led European job discovery and application tracking.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f1e8",
+  "theme_color": "#1838ff"
+}

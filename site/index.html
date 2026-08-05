@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1838ff" />
+    <meta
+      name="description"
+      content="A private-in-the-browser European job tracker for senior motion, creative, experiential and audiovisual roles."
+    />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>European Opportunity Radar</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="European Opportunity Radar home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>EUROPE / OPPORTUNITY RADAR</span>
+      </a>
+      <div class="topbar-meta">
+        <span class="live-dot" aria-hidden="true"></span>
+        <span id="feedStatus">Loading opportunity feed…</span>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <p class="eyebrow">PROFILE-LED SEARCH · EU / EEA / SWITZERLAND</p>
+          <h1>Find the right work.<br /><span>Keep the signal high.</span></h1>
+          <p class="lede">
+            A focused tracker for Ovidiu Eftimie—built around senior motion, creative leadership,
+            experiential, VFX and audiovisual communications roles.
+          </p>
+          <div class="hero-actions">
+            <button class="button button-primary" id="addJobButton" type="button">+ Add opportunity</button>
+            <button class="button button-secondary" id="exportButton" type="button">Export / import</button>
+          </div>
+        </div>
+
+        <aside class="profile-card" aria-label="Search profile">
+          <div class="profile-heading">
+            <span class="profile-monogram">OE</span>
+            <div>
+              <strong>Ovidiu Eftimie</strong>
+              <span>Senior creative & motion specialist</span>
+            </div>
+          </div>
+          <dl class="profile-list">
+            <div><dt>Experience</dt><dd>20+ years</dd></div>
+            <div><dt>Mobility</dt><dd>EU citizen · Europe-wide</dd></div>
+            <div><dt>Languages</dt><dd>RO · EN B2 · FR foundational</dd></div>
+            <div><dt>Target</dt><dd>€4k–€5k / month</dd></div>
+          </dl>
+          <p class="profile-note">
+            French-desirable roles are included. Mandatory B2/C1 French remains a visible gap until demonstrated.
+          </p>
+        </aside>
+      </section>
+
+      <section class="metrics shell" aria-label="Tracker summary">
+        <article><span>Recommended</span><strong id="recommendedCount">0</strong><small>Apply + consider</small></article>
+        <article><span>Applications</span><strong id="applicationCount">0</strong><small>Submitted</small></article>
+        <article><span>In progress</span><strong id="progressCount">0</strong><small>Preparing + interviewing</small></article>
+        <article><span>Closing soon</span><strong id="closingCount">0</strong><small>Within 7 days</small></article>
+      </section>
+
+      <section class="workspace shell">
+        <div class="workspace-heading">
+          <div>
+            <p class="eyebrow">YOUR SHORTLIST</p>
+            <h2>Opportunities</h2>
+          </div>
+          <div class="view-switch" role="group" aria-label="View options">
+            <button class="view-button is-active" type="button" data-view="cards">Cards</button>
+            <button class="view-button" type="button" data-view="pipeline">Pipeline</button>
+          </div>
+        </div>
+
+        <div class="filters" aria-label="Opportunity filters">
+          <label class="search-field">
+            <span class="sr-only">Search</span>
+            <input id="searchInput" type="search" placeholder="Search role, company, location…" autocomplete="off" />
+          </label>
+          <label>
+            <span class="sr-only">Priority</span>
+            <select id="priorityFilter">
+              <option value="all">All priorities</option>
+              <option value="Apply">Apply</option>
+              <option value="Consider">Consider</option>
+              <option value="Stretch">Stretch</option>
+              <option value="Watch">Watch</option>
+            </select>
+          </label>
+          <label>
+            <span class="sr-only">Track</span>
+            <select id="trackFilter"><option value="all">All tracks</option></select>
+          </label>
+          <label>
+            <span class="sr-only">Status</span>
+            <select id="statusFilter"><option value="all">All statuses</option></select>
+          </label>
+          <label>
+            <span class="sr-only">Sort</span>
+            <select id="sortSelect">
+              <option value="score">Highest fit</option>
+              <option value="newest">Newest found</option>
+              <option value="deadline">Nearest deadline</option>
+              <option value="company">Company A–Z</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="resultSummary" class="result-summary" aria-live="polite"></div>
+        <div id="cardsView" class="job-grid"></div>
+        <div id="pipelineView" class="pipeline" hidden></div>
+
+        <div id="emptyState" class="empty-state" hidden>
+          <span aria-hidden="true">◎</span>
+          <h3>No opportunities match these filters</h3>
+          <p>Clear a filter, add a role manually, or run the GitHub workflow to refresh the public job feed.</p>
+          <button class="button button-secondary" id="clearFiltersButton" type="button">Clear filters</button>
+        </div>
+      </section>
+
+      <section class="guardrails shell">
+        <div>
+          <p class="eyebrow">SCORING GUARDRAILS</p>
+          <h2>Useful leads, not false certainty.</h2>
+        </div>
+        <div class="guardrail-grid">
+          <article><strong>01</strong><h3>French stays visible</h3><p>French-desirable roles gain context. Mandatory B2/C1 requirements are flagged as hard gaps.</p></article>
+          <article><strong>02</strong><h3>Seniority matters</h3><p>Junior, intern, trainee and student listings are removed before scoring.</p></article>
+          <article><strong>03</strong><h3>Location is explicit</h3><p>EU/EEA/Swiss roles are prioritised. UK roles need clear sponsorship or work-rights language.</p></article>
+          <article><strong>04</strong><h3>You own the data</h3><p>Statuses and notes stay in this browser. Export them before clearing browser storage or changing devices.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer shell">
+      <p>
+        Public listings supplied by
+        <a href="https://jobicy.com/" target="_blank" rel="noreferrer">Jobicy</a> and
+        <a href="https://www.arbeitnow.com/" target="_blank" rel="noreferrer">Arbeitnow</a>.
+        Always verify role details on the employer’s original page.
+      </p>
+      <p>Personal tracker data remains in your browser unless you export it.</p>
+    </footer>
+
+    <dialog id="jobDialog" class="dialog">
+      <form id="jobForm" method="dialog">
+        <div class="dialog-heading">
+          <div><p class="eyebrow">TRACK AN OPPORTUNITY</p><h2 id="jobDialogTitle">Add opportunity</h2></div>
+          <button class="icon-button" type="button" data-close-dialog="jobDialog" aria-label="Close">×</button>
+        </div>
+        <input id="jobId" name="id" type="hidden" />
+        <div class="form-grid">
+          <label class="span-2">Role title<input id="jobRole" name="role" required /></label>
+          <label>Employer<input id="jobEmployer" name="employer" required /></label>
+          <label>Location<input id="jobLocation" name="location" placeholder="e.g. Amsterdam, NL" /></label>
+          <label>Work mode
+            <select id="jobWorkMode" name="workMode"><option>Remote</option><option>Hybrid</option><option>On-site</option><option>Unclear</option></select>
+          </label>
+          <label>Track<select id="jobTrack" name="track"></select></label>
+          <label>Fit score<input id="jobScore" name="score" type="number" min="0" max="100" value="70" /></label>
+          <label>Status<select id="jobStatus" name="status"></select></label>
+          <label>Deadline<input id="jobDeadline" name="deadline" type="date" /></label>
+          <label class="span-2">Source URL<input id="jobUrl" name="url" type="url" placeholder="https://…" /></label>
+          <label class="span-2">Why it fits<textarea id="jobFit" name="fit" rows="3"></textarea></label>
+          <label class="span-2">Risks / gaps<textarea id="jobRisks" name="risks" rows="3"></textarea></label>
+          <label class="span-2">Private notes<textarea id="jobNotes" name="notes" rows="3"></textarea></label>
+        </div>
+        <div class="dialog-actions">
+          <button class="button button-quiet" type="button" data-close-dialog="jobDialog">Cancel</button>
+          <button class="button button-primary" type="submit">Save opportunity</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="dataDialog" class="dialog dialog-small">
+      <div class="dialog-heading">
+        <div><p class="eyebrow">PORTABLE DATA</p><h2>Export or import</h2></div>
+        <button class="icon-button" type="button" data-close-dialog="dataDialog" aria-label="Close">×</button>
+      </div>
+      <p class="dialog-intro">Export before moving devices or clearing browser data. JSON preserves every tracker field; CSV is convenient for spreadsheets.</p>
+      <div class="data-actions">
+        <button class="button button-primary" id="exportJsonButton" type="button">Download JSON</button>
+        <button class="button button-secondary" id="exportCsvButton" type="button">Download CSV</button>
+        <label class="button button-secondary file-button">Import JSON or CSV<input id="importInput" type="file" accept=".json,.csv,application/json,text/csv" /></label>
+      </div>
+      <p class="data-warning">Importing merges records by ID. It does not upload anything to GitHub.</p>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
