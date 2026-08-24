@@ -1,8 +1,35 @@
 {
-  "generatedAt": "2026-08-17T08:07:05.158Z",
+  "generatedAt": "2026-08-24T08:26:05.077Z",
   "sources": [
     "Jobicy",
     "Arbeitnow"
   ],
-  "jobs": []
+  "jobs": [
+    {
+      "id": "arbeitnow-98f3d5b5957f35ab",
+      "priority": "Apply",
+      "score": 79,
+      "track": "Creative Leadership",
+      "role": "Senior Art Director (d/f/m)",
+      "employer": "Jung von Matt",
+      "location": "Stuttgart",
+      "workMode": "On-site / hybrid",
+      "contract": "Experienced, Permanent, Full time",
+      "salary": "Not stated",
+      "deadline": "",
+      "fit": "Potential fit because seniority aligns with a 20+ year profile; sector overlap: media, communications, advertising. Review the original brief before tailoring the CV.",
+      "risks": "compensation is not stated; verify location eligibility and whether the listing is still active",
+      "cv": "Creative / Experiential",
+      "status": "New",
+      "nextAction": "Open the original listing and verify requirements",
+      "dateFound": "2026-08-24",
+      "lastChecked": "2026-08-24",
+      "publishedAt": "2026-08-24",
+      "url": "https://www.arbeitnow.com/jobs/companies/jung-von-matt/senior-art-director-stuttgart-323342",
+      "active": true,
+      "notes": "",
+      "source": "Arbeitnow",
+      "hardGap": false
+    }
+  ]
 }
