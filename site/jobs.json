@@ -1,10 +1,38 @@
 {
-  "generatedAt": "2026-08-24T08:26:05.077Z",
+  "generatedAt": "2026-08-31T06:03:27.603Z",
   "sources": [
     "Jobicy",
     "Arbeitnow"
   ],
   "jobs": [
+    {
+      "id": "jobicy-56cceb8a4c82ec04",
+      "priority": "Consider",
+      "score": 65,
+      "track": "Video / Content Production",
+      "role": "Ad Creative Producer",
+      "employer": "Ruby Labs",
+      "location": "Europe,  Türkiye",
+      "workMode": "Remote",
+      "contract": [
+        "Full-Time"
+      ],
+      "salary": "Not stated",
+      "deadline": "",
+      "fit": "Potential fit because remote work is indicated; relevant production tools: notch; sector overlap: entertainment, advertising, brand. Review the original brief before tailoring the CV.",
+      "risks": "seniority is not explicit; compensation is not stated; verify location eligibility and whether the listing is still active",
+      "cv": "Creative / Experiential",
+      "status": "New",
+      "nextAction": "Open the original listing and verify requirements",
+      "dateFound": "2026-08-31",
+      "lastChecked": "2026-08-31",
+      "publishedAt": "2026-08-29",
+      "url": "https://jobicy.com/jobs/152036-ad-creative-producer",
+      "active": true,
+      "notes": "",
+      "source": "Jobicy",
+      "hardGap": false
+    },
     {
       "id": "arbeitnow-98f3d5b5957f35ab",
       "priority": "Apply",
@@ -18,7 +46,7 @@
       "salary": "Not stated",
       "deadline": "",
       "fit": "Potential fit because seniority aligns with a 20+ year profile; sector overlap: media, communications, advertising. Review the original brief before tailoring the CV.",
-      "risks": "compensation is not stated; verify location eligibility and whether the listing is still active",
+      "risks": "compensation is not stated; verify location eligibility and whether the listing is still active; no longer present in the latest feed—verify before applying",
       "cv": "Creative / Experiential",
       "status": "New",
       "nextAction": "Open the original listing and verify requirements",
@@ -26,7 +54,7 @@
       "lastChecked": "2026-08-24",
       "publishedAt": "2026-08-24",
       "url": "https://www.arbeitnow.com/jobs/companies/jung-von-matt/senior-art-director-stuttgart-323342",
-      "active": true,
+      "active": false,
       "notes": "",
       "source": "Arbeitnow",
       "hardGap": false
