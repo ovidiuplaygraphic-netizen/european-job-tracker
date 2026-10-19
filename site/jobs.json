@@ -1,10 +1,38 @@
 {
-  "generatedAt": "2026-10-12T14:00:13.471Z",
+  "generatedAt": "2026-10-19T11:40:52.370Z",
   "sources": [
     "Jobicy",
     "Arbeitnow"
   ],
   "jobs": [
+    {
+      "id": "jobicy-9a8d8c8d48752ebd",
+      "priority": "Apply",
+      "score": 84,
+      "track": "Creative Leadership",
+      "role": "Conceptual Art Director",
+      "employer": "Superside",
+      "location": "Anywhere",
+      "workMode": "Remote",
+      "contract": [
+        "Contract"
+      ],
+      "salary": "Not stated",
+      "deadline": "",
+      "fit": "Potential fit because seniority aligns with a 20+ year profile; remote work is indicated; sector overlap: media, brand, culture. Review the original brief before tailoring the CV.",
+      "risks": "compensation is not stated; verify location eligibility and whether the listing is still active",
+      "cv": "Creative / Experiential",
+      "status": "New",
+      "nextAction": "Open the original listing and verify requirements",
+      "dateFound": "2026-10-19",
+      "lastChecked": "2026-10-19",
+      "publishedAt": "2026-10-19",
+      "url": "https://jobicy.com/jobs/153608-conceptual-art-director",
+      "active": true,
+      "notes": "",
+      "source": "Jobicy",
+      "hardGap": false
+    },
     {
       "id": "arbeitnow-ca010bfa46dbfce1",
       "priority": "Apply",
@@ -18,7 +46,7 @@
       "salary": "Not stated",
       "deadline": "",
       "fit": "Potential fit because seniority aligns with a 20+ year profile; relevant production tools: Adobe Creative Cloud; sector overlap: culture, advertising, entertainment. Review the original brief before tailoring the CV.",
-      "risks": "compensation is not stated; verify location eligibility and whether the listing is still active; no longer present in the latest feed—verify before applying",
+      "risks": "compensation is not stated; verify location eligibility and whether the listing is still active; no longer present in the latest feed—verify before applying; no longer present in the latest feed—verify before applying",
       "cv": "Creative / Experiential",
       "status": "New",
       "nextAction": "Open the original listing and verify requirements",
@@ -44,7 +72,7 @@
       "salary": "Not stated",
       "deadline": "",
       "fit": "Potential fit because seniority aligns with a 20+ year profile; sector overlap: Media, Brand. Review the original brief before tailoring the CV.",
-      "risks": "compensation is not stated; verify location eligibility and whether the listing is still active; no longer present in the latest feed—verify before applying",
+      "risks": "compensation is not stated; verify location eligibility and whether the listing is still active; no longer present in the latest feed—verify before applying; no longer present in the latest feed—verify before applying",
       "cv": "Creative / Experiential",
       "status": "New",
       "nextAction": "Open the original listing and verify requirements",
